@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    min-width: 340px;
+    background-color: #1d1716;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: black;
+}
+
+.navBar {
+    background-color: #402a23;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0px 15px;
+    font-size: 13px;
+}
+
+.logo span {
+    color: #f3bc77;
+}
+
+.logo img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.fa-bars {
+    font-size: 25px;
+    margin: 20px;
+    cursor: pointer;
+    color: #f3bc77;
+}
+
+.navContent {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 125px;
+    background-color: #402a23;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: ease .3s all;
+}
+
+.navContent ul {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navContent ul li {
+    margin: 10px 0;
+}
+
+.navContent input {
+    width: 100px;
+    border: none;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.navContent button {
+    padding: 7px 15px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 650;
+}
+
+.about {
+    font-weight: 900;
+}
+
+.login {
+    background-color: #1d1716;
+}
+
+.signUp {
+    background: #f3bc77;
+}
+
+.hide {
+    display: none;
+}
