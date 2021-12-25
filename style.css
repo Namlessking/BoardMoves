@@ -109,3 +109,101 @@ body {
 .hide {
     display: none;
 }
+
+/* -------
+    Main content:
+*/
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContent .header {
+    width: 300px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.Board {
+    font-size: 30px;
+}
+
+.Moves {
+    color: #f3bc77;
+}
+
+.currentPLayer {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.fa-user-circle {
+    font-size: 55px;
+    margin-left: 10px;
+}
+
+.playOptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.playOptions button {
+    margin: 5px 0;
+}
+
+.pvp, .bot {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.bot span {
+    width: 100%;
+}
+
+.pvp {
+    background-color: #f3bc77;
+}
+
+.pvp span {
+    margin: 5px;
+}
+
+.avatar {
+    width: 40px;
+}
+
+.fa-robot {
+    font-size: 35px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a, footer p {
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+}
+
+.icon {
+    margin: 10px 0;
+}
+
+.icon .fab {
+    font-size: 24px;
+}
