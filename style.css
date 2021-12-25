@@ -106,10 +106,6 @@ body {
     background: #f3bc77;
 }
 
-.hide {
-    display: none;
-}
-
 /* -------
     Main content:
 */
@@ -184,7 +180,7 @@ body {
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 200px;
     display: flex;
@@ -201,9 +197,61 @@ footer a, footer p {
 }
 
 .icon {
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .icon .fab {
     font-size: 24px;
+    margin: 0 3px;
+}
+
+/* Login pop up */
+.loginPopUp {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loginDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 190px;
+    background-color: #f3bc77;
+    padding: 20px;
+    border-radius: 4px;
+    color: black;
+}
+
+.loginDiv input {
+    margin: 10px 0;
+    width: 155px;
+    border: none;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.logingBtn {
+    background-color: #402a23;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 5px 0;
+}
+
+.loginDiv p, .loginDiv a {
+    font-size: 12px;
+}
+
+.hide {
+    display: none;
 }
