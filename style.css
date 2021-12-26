@@ -374,7 +374,7 @@ footer a, footer p {
 
 @media (min-width: 794px) {
     body {
-        background-image: url(/sourcs/background.jpg);
+        background-image: url("https://namlessking.github.io/BoardMoves/sourcs/background.jpg");
         background-size: cover;
         display: flex;
         justify-content: center;
