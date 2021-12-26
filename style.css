@@ -25,9 +25,13 @@ body {
 .navBar {
     background-color: #402a23;
     display: flex;
+    height: 69px;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 .logo {
@@ -35,6 +39,11 @@ body {
     align-items: center;
     margin: 0px 15px;
     font-size: 13px;
+    cursor: pointer;
+}
+
+.logo span, .logo h1, .logo img {
+    pointer-events: none;
 }
 
 .logo span {
@@ -55,6 +64,7 @@ body {
 
 .navContent {
     position: fixed;
+    top: 65px;
     right: 0;
     height: 100%;
     width: 125px;
@@ -94,6 +104,23 @@ body {
     font-weight: 650;
 }
 
+.navUl2 {
+    display: none
+}
+
+.navUl2 li {
+    margin: 0 10px;
+}
+
+.navUl2 li button {
+    padding: 7px 15px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 650;
+}
+
 .about {
     font-weight: 900;
 }
@@ -106,10 +133,27 @@ body {
     background: #f3bc77;
 }
 
+.login2 {
+    background-color: #1d1716;
+}
+
+.signUp3 {
+    background: #f3bc77;
+}
+
 /* -------
     Main content:
 */
 .mainContent {
+    margin-top: 69px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,6 +203,10 @@ body {
     cursor: pointer;
 }
 
+.pvp p, .pvp .fa-robot, .pvp span, .bot p, .bot .fa-robot, .bot span {
+    pointer-events: none;
+}
+
 .bot span {
     width: 100%;
 }
@@ -182,7 +230,7 @@ body {
 footer {
     position: absolute;
     bottom: 0;
-    width: 200px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,4 +302,127 @@ footer a, footer p {
 
 .hide {
     display: none;
+}
+
+/* sing up */
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 220px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #f3bc77;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.singUpContent {
+    border-top: solid black 2px;
+    padding: 10px;
+}
+
+.singUpContent input {
+    margin: 5px 0;
+    border: none;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.singUpContent label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.submit {
+    background-color: #402a23;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 5px 0;
+}
+
+.chessImg {
+    display: none;
+}
+
+/* Ipad dimensions */
+@media (min-width: 600px) {
+    .mainContent {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .chessImg {
+        display: block;
+        margin: 20px;
+    }
+
+    .chessImg2 {
+        width: 250px;
+    }
+
+    .mainContent .header {
+        flex: 50%;
+    }
+}
+
+@media (min-width: 794px) {
+    body {
+        background-image: url(/sourcs/background.jpg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .navContent {
+        display: none;
+    }
+
+    .mainContent {
+        width: 810px;
+        height: 93%;
+        align-items: flex-start;
+        background-color: #1d1716;
+    }
+
+    .chessImg2 {
+        width: 300px;
+        margin-top: 40px;
+    }
+
+    .header, .currentPLayer {
+        font-size: 20px;
+    }
+
+    .header {
+        width: 100px;
+    }
+
+    .mainHeader {
+        width: 350px;
+        margin-top: 70px;
+    }
+
+    .navUl2 {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    .playOptions button{
+        font-size: 20px;
+        height: 60px;
+        margin-top: -150px;
+    }
 }
